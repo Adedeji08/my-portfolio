@@ -80,7 +80,7 @@ const Navbar = () => {
             </li>
             </ul>
             <div  className='md:hidden' onClick={handleNav}>
-             <AiOutlineMenu className='cursor-pointer' size={25} />
+             <AiOutlineMenu className='cursor-pointer' style={{color: `${linkColor}`  }} size={25} />
           </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ const Navbar = () => {
                <div>
                 <div className='flex w-full items-center justify-between' >
                 <Image
-                  src='/../public/assets/Eben-medias.png'
+                  src={Logo}
                   alt='/'
                   width='40'
                   height='35'
