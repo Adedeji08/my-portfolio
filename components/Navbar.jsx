@@ -6,6 +6,7 @@ import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import Logo from '../public/assets/Eben-medias.png'
 
 
 const Navbar = () => {
@@ -51,7 +52,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center w-full px-2 2xl:px-16'>
           <Link href='/'>
           <Image
-          src='/../public/assets/Eben-medias.png'
+          src={Logo}
           alt='/'
           width='80'
           height='50'

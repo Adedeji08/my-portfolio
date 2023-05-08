@@ -1,5 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
+import PRD from '../public/skills/html.png'
+import CSS from '../public/skills/css.png'
+import Angular from '../public/skills/logo4.png'
+import REACT from '../public/skills/react.png'
+import Boot from '../public/skills/bootstrap5.jpeg'
+import Tail from '../public/skills/tailwind.png'
+import GitHub from '../public/skills/github1.png'
+import Postman from '../public/skills/channels4_profile.jpg'
+import Next from '../public/skills/nextjs.png'
+import JS from '../public/skills/javascript.png'
 
 const Skills = () => {
   return (
@@ -13,7 +23,7 @@ const Skills = () => {
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                    <div className='m-auto'>
                     <Image
-                    src='/../public/skills/html.png'
+                    src={PRD}
                     alt='PRD'
                     width={64}
                     height={64}
@@ -29,7 +39,7 @@ const Skills = () => {
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                    <div className='m-auto'>
                     <Image
-                    src='/../public/skills/css.png'
+                    src={CSS}
                     alt='PRD'
                     width={64}
                     height={64}
@@ -45,7 +55,7 @@ const Skills = () => {
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                    <div className='m-auto'>
                     <Image
-                    src='/../public/skills/tailwind.png'
+                    src={Tail}
                     alt='PRD'
                     width={64}
                     height={64}
@@ -61,7 +71,7 @@ const Skills = () => {
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                    <div className='m-auto'>
                     <Image
-                    src='/../public/skills/bootstrap5.jpeg'
+                    src={Boot}
                     alt='PRD'
                     width={64}
                     height={64}
@@ -77,7 +87,7 @@ const Skills = () => {
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                    <div className='m-auto'>
                     <Image
-                    src='/../public/skills/react.png'
+                    src={REACT}
                     alt='PRD'
                     width={64}
                     height={64}
@@ -93,7 +103,7 @@ const Skills = () => {
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                    <div className='m-auto'>
                     <Image
-                    src='/../public/skills/nextjs.png'
+                    src={Next}
                     alt='PRD'
                     width={64}
                     height={64}
@@ -109,7 +119,7 @@ const Skills = () => {
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                    <div className='m-auto'>
                     <Image
-                    src='/../public/skills/javascript.png'
+                    src={JS}
                     alt='PRD'
                     width={64}
                     height={64}
@@ -125,7 +135,7 @@ const Skills = () => {
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                    <div className='m-auto'>
                     <Image
-                    src='/../public/skills/logo4.png'
+                    src={Angular}
                     alt='PRD'
                     width={64}
                     height={64}
@@ -141,7 +151,7 @@ const Skills = () => {
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                    <div className='m-auto'>
                     <Image
-                    src='/../public/skills/github1.png'
+                    src={GitHub}
                     alt='PRD'
                     width={64}
                     height={64}
@@ -157,7 +167,7 @@ const Skills = () => {
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                    <div className='m-auto'>
                     <Image
-                    src='/../public/skills/channels4_profile.jpg'
+                    src={Postman}
                     alt='PRD'
                     width={64}
                     height={64}
