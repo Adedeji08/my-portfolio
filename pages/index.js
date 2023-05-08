@@ -1,10 +1,12 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
-import Navbar from '@/components/Navbar'
 import Main from '@/components/Main'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
+import Projects from '@/components/Projects'
+import Contact from '@/components/Contact'
+import Update from './Update'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,10 +27,12 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
       </Head>
-     <Navbar />
      <Main />
      <About />
      <Skills />
+     <Projects />
+     <Contact />
+     {/* <Update /> */}
     </main>
   )
 }

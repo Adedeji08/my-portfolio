@@ -2,10 +2,9 @@ import React from "react";
 import Image from "next/image";
 import image from "../public/assets/PRD.jpg";
 import Link from "next/link";
-
 const About = () => {
   return (
-    <div className="w-full md:h-screen p-2 flex items-center py-16">
+    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
@@ -30,7 +29,9 @@ const About = () => {
             quickly and I’m willing to work with new frameworks, languages,
             tools and technologies.
           </p>
-          <p>Check out some of my latest projects.</p>
+          <p className="text-center border-2 border-blue-600 w-[115px] hover:scale-105 ease-in duration-300">
+               <a href='/Oluwadamilola.pdf' download='cv'>Download CV</a>
+          </p>
           <Link href="/#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer">
               Check out some of my latest projects.

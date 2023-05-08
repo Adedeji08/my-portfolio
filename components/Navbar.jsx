@@ -5,6 +5,7 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 
 
 const Navbar = () => {
@@ -12,10 +13,28 @@ const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState('#ecf0f3');
   const [linkColor, setLinkColor] = useState('#1f2937');
-
+  const router = useRouter()
   const handleNav = () => {
     setNav(!nav);
   };
+
+  useEffect(() => {
+    if(
+      router.asPath === '/Update' ||
+      router.asPath === '/Reward' ||
+      router.asPath === '/Notification'||
+      router.asPath === '/Portfolio'||
+      router.asPath === '/Tik'||
+      router.asPath === '/CountrySearch'
+    ){
+      setNavBg('transparent')
+      setLinkColor('#ecf0f3')
+    } else{
+      setNavBg('#ecf0f3')
+      setLinkColor('#000')
+    }
+  },[router])
+  
 
   useEffect(() => {
     const handleShadow = () => {
@@ -28,16 +47,18 @@ const Navbar = () => {
     window.addEventListener('scroll', handleShadow);
   }, []);
   return (
-    <div className='fixed w-full shadow-xl z-[100]'>
+    <div className={shadow ? `fixed w-full h-20 shadow-xl z-[100]` : `fixed w-full h-20 z-[100]`} style={{background: `${navBg}`}}>
         <div className='flex justify-between items-center w-full px-2 2xl:px-16'>
+          <Link href='/'>
           <Image
           src='/../public/assets/Eben-medias.png'
           alt='/'
           width='80'
           height='50'
           />
+          </Link>
           <div>
-            <ul  style={{  }} className='hidden md:flex'>
+            <ul  style={{color: `${linkColor}`  }} className='hidden md:flex'>
             <li className='ml-10 text-sm uppercase hover:border-b'>
               <Link href='/'>Home</Link>
             </li>
@@ -50,9 +71,9 @@ const Navbar = () => {
             <li className='ml-10 text-sm uppercase hover:border-b'>
               <Link href='/#projects'>Projects</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/resume'>Resume</Link>
-            </li>
+            {/* <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href='/#resume'>Resume</Link>
+            </li> */}
             <li className='ml-10 text-sm uppercase hover:border-b'>
               <Link href='/#contact'>Contact</Link>
             </li>
@@ -108,11 +129,11 @@ const Navbar = () => {
                   Projects
                 </li>
               </Link>
-              <Link href='/resume'>
+              {/* <Link href='/#resume'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Resume
                 </li>
-              </Link>
+              </Link> */}
               <Link href='/#contact'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Contact
@@ -134,13 +155,16 @@ const Navbar = () => {
                       <FaGithub />
                     </div>
                     </Link>
-                    <Link href='https://mail.google.com/mail/u/0/#inbox'  target='_blank' rel='noreferrer'>                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <Link href='/#contact'  target='_blank' rel='noreferrer'>                 
+                      <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                       <AiOutlineMail />
                     </div>
                     </Link>
+                    <Link href='/#about' target='_blank' rel='noreferrer'>
                     <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                       <BsFillPersonLinesFill />
                     </div>
+                    </Link>
                     </div>
                 </div>
                </div>
