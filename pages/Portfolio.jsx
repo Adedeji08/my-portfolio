@@ -32,14 +32,14 @@ const Portfolio = () => {
           can view on web and interact with.
         </p>
         <a
-          href='/https://github.com/Adedeji08/eben-cv'
+          href='https://github.com/Adedeji08/my-portfolio'
           target='_blank'
           rel='noreferrer'
         >
           <button className='px-8 py-2 mt-4 mr-8'>Code</button>
         </a>
         <a
-          href='https://eben-cv.vercel.app/'
+          href='https://myportfolio-20.vercel.app/'
           target='_blank'
           rel='noreferrer'
         >
