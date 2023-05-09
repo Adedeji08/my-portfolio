@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import propertyImg from '../public/projects/question-notice-notification-box-set-vector-34250568.png';
+import propertyImg from '../public/projects/question-notice-notification-box-set-vector-34250568.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
