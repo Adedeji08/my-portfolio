@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import propertyImg from '../public/projects/Melio-1024x621.png';
+import propertyImg from '../public/projects/How-to-make-portfolio-for-design-admission.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
@@ -18,7 +18,7 @@ const Portfolio = () => {
       />
       <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
         <h2 className='py-2'>My Portfolio</h2>
-        <h3>React JS / Saas / Email JS</h3>
+        <h3>Next JS / Saas / Email JS</h3>
       </div>
     </div>
 

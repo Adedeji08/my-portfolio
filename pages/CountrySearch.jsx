@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import propertyImg from '../public/projects/Melio-1024x621.png';
+import propertyImg from '../public/projects/worldmap-webistes-hi-res.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
