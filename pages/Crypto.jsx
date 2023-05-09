@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from 'next/image';
-import propertyImg from '../public/projects/question-notice-notification-box-set-vector-34250568.jpg';
+import Cryp from '../public/projects/Crypto.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const Notification = () => {
+const Crypto = () => {
   return (
     <div className='w-full'>
     <div className='w-screen h-[50vh] relative'>
@@ -13,12 +13,12 @@ const Notification = () => {
         className='absolute z-1'
         layout='fill'
         objectFit='cover'
-        src={propertyImg}
+        src={Cryp}
         alt='/'
       />
       <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-        <h2 className='py-2'>My Notification</h2>
-        <h3>Angular / Css / TypeScript</h3>
+        <h2 className='py-2'>My Crypto</h2>
+        <h3>React / Css / Javascript / Coingecko(Api)</h3>
       </div>
     </div>
 
@@ -27,18 +27,18 @@ const Notification = () => {
         <p>Project</p>
         <h2>Overview</h2>
         <p>
-          This app was built using Angular and is hosted on Vercel.
-          This is a app built to identify read and unread messages
+          This app was built using React JS and is hosted on Vercel.
+          This is to view the rise and fall of top cryptocurrencies
         </p>
         <a
-          href='https://github.com/Adedeji08/notification-page-main'
+          href='https://mini-crypto-app-indol.vercel.app/'
           target='_blank'
           rel='noreferrer'
         >
           <button className='px-8 py-2 mt-4 mr-8'>Code</button>
         </a>
         <a
-          href='https://notification-page-main.vercel.app/'
+          href='https://github.com/Adedeji08/mini-crypto-app'
           target='_blank'
           rel='noreferrer'
         >
@@ -69,4 +69,4 @@ const Notification = () => {
   )
 }
 
-export default Notification
+export default Crypto
