@@ -32,10 +32,10 @@ const Projects = () => {
             tech="React JS"
           />
           <ProjectItems
-            title="Business Update"
+            title="Mini-Crypto-App"
             backgroundImg={Crypto}
             projectUrl="/Crypto"
-            tech="Next JS"
+            tech="React JS"
           />
           <ProjectItems
             title="Tik Video App"
