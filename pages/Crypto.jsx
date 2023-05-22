@@ -27,18 +27,20 @@ const Crypto = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This app was built using React JS and is hosted on Vercel. This is
-            to view the rise and fall of top cryptocurrencies
+            This app was built using React JS and is hosted on Vercel. <br/>This is gives
+            you an insight into cryptocurrencies. It tells you about each coin and the 
+            market value
+            In addition it displays the rise and fall of it intermittently.
           </p>
           <a
-            href="https://github.com/Adedeji08/mini-crypto-app"
+            href="https://crypto-rate-pi.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </a>
           <a
-            href="https://mini-crypto-app-indol.vercel.app/"
+            href="https://github.com/Adedeji08/crypto-app"
             target="_blank"
             rel="noreferrer"
           >

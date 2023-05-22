@@ -32,7 +32,7 @@ const Projects = () => {
             tech="React JS"
           />
           <ProjectItems
-            title="Mini-Crypto-App"
+            title="Crypto-App"
             backgroundImg={Crypto}
             projectUrl="/Crypto"
             tech="React JS"
