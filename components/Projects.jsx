@@ -74,7 +74,7 @@ const Projects = () => {
             title="My portfolio"
             backgroundImg={Port}
             projectUrl="/Portfolio"
-            tech="React JS"
+            tech="Next JS"
           />
           <ProjectItems
             title="Notification Box"
