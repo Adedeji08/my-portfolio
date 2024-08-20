@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import propertyImg from "../public/projects/mobile-conference-apps.jpg";
+import propertyImg from "../public/projects/vendpal.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-function ConferenceApp() {
+const Vendpal = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -17,8 +17,8 @@ function ConferenceApp() {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Conference-App</h2>
-          <h3>React TS</h3>
+          <h2 className="py-2"> Vendstash</h2>
+          <h3>React TS / Tailwind / Antd</h3>
         </div>
       </div>
 
@@ -27,16 +27,18 @@ function ConferenceApp() {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This app was built using React Typescript. It is an app used for
-            appointment scheduling that has the Admin flow and the Receptionist
-            flow. Using the app you can add staff, levels, departments, create
-            visitors, send broadcast messages among other nice features.
+            Vendpal is a digital procurement platform. It streamlines the
+            cumbersome processes involved in procurement, while optimising costs
+            at the same time. It is a centralised platform for vendor services
+            that simplifies the vendor selection process, and its target
+            audiences include companies seeking vendor services, procurement
+            professionals, decision-makers, finance officers, procurement
+            intermediaries, vendors in strategic industries, and vendor
+            management teams and executives. Basically, it empowers these
+            audiences to achieve outstanding procurement results.
           </p>
-          <a
-            href="https://fe-visitors-app.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
+         
+          <a href="https://vendpal.vercel.app/" target="_blank" rel="noreferrer">
             <button className="px-8 py-2 mt-4">Demo</button>
           </a>
         </div>
@@ -48,10 +50,13 @@ function ConferenceApp() {
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Tailwind & Material UI
+                <RiRadioButtonFill className="pr-1" /> Tailwind
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> TypeScript
+                <RiRadioButtonFill className="pr-1" /> Antd
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Typescript
               </p>
             </div>
           </div>
@@ -64,6 +69,6 @@ function ConferenceApp() {
       </div>
     </div>
   );
-}
+};
 
-export default ConferenceApp;
+export default Vendpal;

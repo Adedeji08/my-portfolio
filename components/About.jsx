@@ -30,7 +30,7 @@ const About = () => {
             tools and technologies.
           </p>
           <p className="text-center border-2 border-blue-600 w-[115px] hover:scale-105 ease-in duration-300">
-               <a href='/Oluwadamilola.pdf' download='cv'>Download CV</a>
+               <a href='/Ebenezer Adedeji.pdf' download='cv'>Download CV</a>
           </p>
           <Link href="/#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer">

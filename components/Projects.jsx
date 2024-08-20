@@ -3,14 +3,15 @@ import React from "react";
 import Update from "../public/projects/Melio-1024x621.png";
 import Heineken from "../public/projects/brand-hero.jpg";
 import Conference from "../public/projects/mobile-conference-apps.jpg";
-import Link from "next/link";
 import ProjectItems from "./ProjectItems";
 import rewardApp from "../public/projects/reward-app.png";
 import Port from "../public/projects/How-to-make-portfolio-for-design-admission.jpg";
 import CountrySearch from "../public/projects/worldmap-webistes-hi-res.png";
 import TikTik from "../public/projects/TikTik.jpg";
 import Notify from "../public/projects/unnamed.png";
-import Crypto from '../public/projects/Crypto.png'
+import Crypto from "../public/projects/Crypto.png";
+import Vendstash from "../public/projects/vendstash.jpg";
+import Vendpal from "../public/projects/vendpal.jpg";
 
 const Projects = () => {
   return (
@@ -21,13 +22,25 @@ const Projects = () => {
         </p>
         <h2 className="py-4">What I have built</h2>
         <div className="grid md:grid-cols-2 gap-8">
-        <ProjectItems
-            title="Book-Time"
+          <ProjectItems
+            title="Vendstash"
+            backgroundImg={Vendstash}
+            projectUrl="/vendstash"
+            tech="React TS"
+          />
+          <ProjectItems
+            title="Vendpal"
+            backgroundImg={Vendpal}
+            projectUrl="/vendpal"
+            tech="React TS"
+          />
+          <ProjectItems
+            title="Conference App"
             backgroundImg={Conference}
             projectUrl="/ConferenceApp"
             tech="React TS"
           />
-           <ProjectItems
+          <ProjectItems
             title="Kenya CDP"
             backgroundImg={Heineken}
             projectUrl="/Heineken"

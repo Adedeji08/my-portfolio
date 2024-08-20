@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import propertyImg from "../public/projects/mobile-conference-apps.jpg";
+import propertyImg from "../public/projects/vendstash.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-function ConferenceApp() {
+const Vendstash = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -17,8 +17,8 @@ function ConferenceApp() {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Conference-App</h2>
-          <h3>React TS</h3>
+          <h2 className="py-2"> Vendstash</h2>
+          <h3>React TS / Tailwind / Antd</h3>
         </div>
       </div>
 
@@ -27,16 +27,17 @@ function ConferenceApp() {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This app was built using React Typescript. It is an app used for
-            appointment scheduling that has the Admin flow and the Receptionist
-            flow. Using the app you can add staff, levels, departments, create
-            visitors, send broadcast messages among other nice features.
+            Vendstash is a digital escrow platform. In simpler terms, a safety
+            deposit box for payments during online transactions, where the
+            payment is only released when all conditions of the transactions
+            have been met, ie the goods/services has been delivered to the buyer
+            by the seller, and the buyer is satisfied with the delivered
+            product. Vendstash is not just a payment platform, it’s a means of
+            revolutionising online transactions, infusing trust and reliability
+            into every transaction.
           </p>
-          <a
-            href="https://fe-visitors-app.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
+         
+          <a href="https://vendstash.com" target="_blank" rel="noreferrer">
             <button className="px-8 py-2 mt-4">Demo</button>
           </a>
         </div>
@@ -48,10 +49,13 @@ function ConferenceApp() {
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Tailwind & Material UI
+                <RiRadioButtonFill className="pr-1" /> Tailwind
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> TypeScript
+                <RiRadioButtonFill className="pr-1" /> Antd
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Typescript
               </p>
             </div>
           </div>
@@ -64,6 +68,6 @@ function ConferenceApp() {
       </div>
     </div>
   );
-}
+};
 
-export default ConferenceApp;
+export default Vendstash;
