@@ -2,9 +2,9 @@ import Image from 'next/image'
 import React from 'react'
 import PRD from '../public/skills/html.png'
 import CSS from '../public/skills/css.png'
-import Angular from '../public/skills/logo4.png'
 import REACT from '../public/skills/react.png'
-import Boot from '../public/skills/bootstrap5.jpeg'
+import NodeIcon from '../public/skills/Node.js.png'
+import ExpressIcon from '../public/skills/expressjs.svg'
 import Tail from '../public/skills/tailwind.png'
 import GitHub from '../public/skills/github1.png'
 import Postman from '../public/skills/channels4_profile.jpg'
@@ -71,14 +71,30 @@ const Skills = () => {
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                    <div className='m-auto'>
                     <Image
-                    src={Boot}
+                    src={NodeIcon}
                     alt='PRD'
                     width={64}
                     height={64}
                     />
                    </div>
                    <div className='flex flex-col items-center justify-center'>
-                    <h3>Bootstrap</h3>
+                    <h3>Node Js</h3>
+                   </div>
+                </div>
+            </div>
+
+                      <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                   <div className='m-auto'>
+                    <Image
+                    src={ExpressIcon}
+                    alt='PRD'
+                    width={64}
+                    height={64}
+                    />
+                   </div>
+                   <div className='flex flex-col items-center justify-center'>
+                    <h3>Express Js</h3>
                    </div>
                 </div>
             </div>

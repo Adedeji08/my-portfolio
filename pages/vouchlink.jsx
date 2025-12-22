@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import propertyImg from '../public/projects/brand-hero.jpg';
+import propertyImg from '../public/projects/frame.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
@@ -17,8 +17,8 @@ const Heineken = () => {
         alt='/'
       />
       <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-        <h2 className='py-2'>Kenya CDP</h2>
-        <h3>Angular</h3>
+        <h2 className='py-2'>Vouchlink</h2>
+        <h3>React</h3>
       </div>
     </div>
 
@@ -27,10 +27,11 @@ const Heineken = () => {
         <p>Project</p>
         <h2>Overview</h2>
         <p>
-          This app was built using Angular
+
+          Its a voucher management platform that allows businesses to create, distribute, and redeem digital vouchers for their customers. The platform provides an easy-to-use interface for businesses to manage their voucher campaigns, track redemptions, and analyze customer engagement.
         </p>
         <a
-          href='https://staging-heineken.terragoncdp.com/'
+          href='https://app.vouchlinks.com/'
           target='_blank'
           rel='noreferrer'
         >
@@ -42,10 +43,10 @@ const Heineken = () => {
           <p className='text-center font-bold pb-2'>Technologies</p>
           <div className='grid grid-cols-3 md:grid-cols-1'>
             <p className='text-gray-600 py-2 flex items-center'>
-              <RiRadioButtonFill className='pr-1' /> Angular
+              <RiRadioButtonFill className='pr-1' /> React
             </p>
             <p className='text-gray-600 py-2 flex items-center'>
-              <RiRadioButtonFill className='pr-1' /> Bootstrap
+              <RiRadioButtonFill className='pr-1' /> Tailwind
             </p>
             <p className='text-gray-600 py-2 flex items-center'>
               <RiRadioButtonFill className='pr-1' /> TypeScript

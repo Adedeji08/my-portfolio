@@ -13,24 +13,31 @@ const About = () => {
           <h2 className="py-4">Who I am</h2>
           <p className="py-4">A skillful and committed developer</p>
           <p className="py-2 text-gray-600">
-            A Frontend Engineer with three years plus of appreciable experience
-            developing SaaS applications. I have worked in Frontend positions
-            where I bring architectural designs to life. I am comfortable as an
-            independent developer or team player, and eager to obtain a
-            challenging position in a prestigious Company like yours.
+            Full-Stack Developer with three-plus years of experience building
+            complete SaaS solutions. I bring architectural designs to life by
+            working across the entire application stack—from creating
+            responsive, user-friendly interfaces to developing scalable backend
+            APIs and database systems
           </p>
           <p className="py-2 text-gray-600">
-            I’m adept in OOP, follow best practices and keep up with standards.
-            I’m proficient in frontend from conception to publishing. My
-            professional time has been spent modifying and building large
-            applications. I’ve worked extensively with modern frameworks such as
-            React, Next, Redux, Tailwind, Angular, Bootstrap. I strive to
-            deliver quality results. I’m driven by meeting deadlines. I learn
-            quickly and I’m willing to work with new frameworks, languages,
-            tools and technologies.
+            Proficient in modern frontend frameworks (React, Next.js, Angular)
+            with complementary backend experience in Node.js, API development,
+            and database management. My professional journey includes working on
+            large applications where I've contributed to both client-side and
+            server-side components, ensuring seamless integration and optimal
+            performance.
+          </p>
+
+          <p className="py-2 text-gray-600">
+            As a detail-oriented engineer who follows best practices and meets
+            deadlines, I thrive in challenging environments and quickly adapt to
+            new technologies, tools, and frameworks across the full development
+            spectrum.
           </p>
           <p className="text-center border-2 border-blue-600 w-[115px] hover:scale-105 ease-in duration-300">
-               <a href='/Ebenezer Adedeji.pdf' download='cv'>Download CV</a>
+            <a href="/Ebenezer Adedeji.pdf" download="cv">
+              Download CV
+            </a>
           </p>
           <Link href="/#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer">
@@ -38,8 +45,14 @@ const About = () => {
             </p>
           </Link>
         </div>
-        <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-          <Image className="rounded" src={image} alt="PRD" width={500} height={55} />
+        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+          <Image
+            className="rounded"
+            src={image}
+            alt="PRD"
+            width={500}
+            height={55}
+          />
         </div>
       </div>
     </div>

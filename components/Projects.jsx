@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Update from "../public/projects/Melio-1024x621.png";
-import Heineken from "../public/projects/brand-hero.jpg";
+import Vouchlink from "../public/projects/frame.png";
 import Conference from "../public/projects/mobile-conference-apps.jpg";
 import ProjectItems from "./ProjectItems";
 import rewardApp from "../public/projects/reward-app.png";
@@ -22,7 +22,14 @@ const Projects = () => {
         </p>
         <h2 className="py-4">What I have built</h2>
         <div className="grid md:grid-cols-2 gap-8">
+
           <ProjectItems
+            title="Vouchlink"
+            backgroundImg={Vouchlink}
+            projectUrl="/vouchlink"
+            tech="React"
+          />
+                    <ProjectItems
             title="Vendstash"
             backgroundImg={Vendstash}
             projectUrl="/vendstash"
@@ -39,12 +46,6 @@ const Projects = () => {
             backgroundImg={Conference}
             projectUrl="/ConferenceApp"
             tech="React TS"
-          />
-          <ProjectItems
-            title="Kenya CDP"
-            backgroundImg={Heineken}
-            projectUrl="/Heineken"
-            tech="Angular"
           />
           <ProjectItems
             title="Business Update"

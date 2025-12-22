@@ -1,5 +1,4 @@
 import React from 'react'
-import Pro1 from '../public/projects/Melio-1024x621.png'
 import Link from 'next/link'
 import Image from 'next/image'
 
